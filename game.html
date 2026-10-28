@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game 2d</title>
+    <style>
+        body {
+        }
+
+        .board {
+            background-color: bisque;
+            position: absolute;
+        }
+
+        .player {
+            width: 10px;
+            height: 10px;
+            /* background-color: rgb(100, 183, 131); */
+            border-radius: 50%;
+            position: absolute;
+            font-size: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="board">
+        <div class="player" class="player">🥸</div>
+    </div>
+    <button onclick="moveUp()">Top</button>
+    <button onclick="moveDown()">Bottom</button>
+    <button onclick="moveLeft()">Left</button>
+    <button onclick="moveRight()">Right</button>
+
+    <script>
+        let playerX = 10;
+        let playerY = 20;
+
+        const boardHeight = 150;
+        const broadWidth = 300;
+        
+        const playerEl = document.getElementsById("player");
+        const boardEl = document.getElementById("board");
+
+        boardEl.style.width =`$(boardWidth)px`;
+        boardEl.style.height = `$(boardHeight)px`;
+
+        draw();
+
+        function moveUp() {
+            playerY = playerY - 10;
+            if (playerY==0) { 
+                playerY = boardHeight;
+            }
+            draw();
+        }
+
+        function moveDown() {
+            playerY = playerY + 10;
+            if (playerY) > boardHeight - 10
+        }
+    </script>
+</body>
+</html>

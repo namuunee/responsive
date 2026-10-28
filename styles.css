@@ -1,0 +1,128 @@
+body {
+    margin:0;
+    font-family: "manrope", sans-serif;
+    background-color:lightgray;
+}
+ /*@media (min-width: 600px) {
+    body {
+        background-color: lightgray;
+    }
+ }
+ @media (min-width:800px) {
+    body{
+        background-color: rgb(93,28,28);
+    }
+ }
+ @media (min-width:1000px) {
+    body {
+        background-color: green;
+    }
+ } */
+
+
+.qpm{
+    text-align:center;
+    max-width: 1153px;
+    margin:0 auto;
+    padding:120px 0 150px;
+}
+
+@media (min-width:1000px) {
+    .qpm {
+        padding:120px 0 150px;
+    }
+}
+
+.qpm-title{
+    font-size:24px;
+    font-weight: 800;
+    margin:0;
+}
+
+@media (min-width:1000px) {
+    .qpm-title {
+        font-size: 36px;
+    }
+}
+
+@media (min-width:1000px) {
+    .qpm-item:nth-child(1) {
+       order: 1;
+    }
+    .qpm-item:nth-child(2) {
+        order: 2;
+    }
+    .qpm-item:nth-child(3) {
+        order:4;
+    }
+    .qpm-item:nth-child(4) {
+         order: 3;
+    }
+    .qpm-item:nth-child(5) {
+        order: 6;
+    }
+    .qpm-item:nth-child(6) { 
+         order: 5;
+    }
+}
+
+.qpm-desc{
+    max-width: 1000px;
+    margin: 20px auto 90px;
+    font-size: 24px;
+    padding: 0 30px;
+}
+
+.qpm-items{ 
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    row-gap: 90px;
+    column-gap: 110px;
+
+}
+.qpm-item{
+    width: 300px;
+    height:210px;
+}
+
+
+.qpm-icon {
+    width:76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+    position: relative;
+}
+ .qpm-circle {
+    width: 45px;
+    height: 45px;
+    background-color: #ff5391;
+    border-radius: 50%;
+    position: absolute;
+    top: -1px;
+    right: -3px;
+ }
+
+ .qpm-icon .lucide {
+    position: relative;
+    z-index: 10;
+ }
+
+ .qpm-name {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 10px;
+ }
+
+ .qpm-tagline {
+    font-size: 10px;
+    line-height: 20px;
+ }
+ /* HERO*/
+ .hero {
+    background-image: url(image.png);
+
+ }
+ /*END OF HERO*/
